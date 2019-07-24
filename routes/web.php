@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'WelcomeController');
+
+Route::post(config('services.telegram.webhook'), 'WebhookController')->name('telegram.webhook');

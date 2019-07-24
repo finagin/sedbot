@@ -44,4 +44,10 @@ return [
         ],
     ],
 
+    'telegram' => [
+        'token' => env('TELEGRAM_TOKEN'),
+        'webhook' => '/'.env('TELEGRAM_SECRET', 'nn7atQgmSNJuvfPq').'/webhook',
+        'proxy' => env('TELEGRAM_PROXY'),
+    ],
+
 ];
